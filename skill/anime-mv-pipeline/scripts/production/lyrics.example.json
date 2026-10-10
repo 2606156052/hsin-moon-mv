@@ -1,0 +1,23 @@
+{
+ "lines": [
+  [
+   0.386,
+   "<line 1>"
+  ],
+  [
+   4.665,
+   "<line 2>"
+  ]
+ ],
+ "display": {
+  "0.386": [
+   "FIRST HOOK|LINE",
+   "right"
+  ]
+ },
+ "panels": {
+  "strings": "PANEL TEXT",
+  "phases": "PANEL|TEXT",
+  "moonrain": "PANEL|TEXT"
+ }
+}

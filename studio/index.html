@@ -1,0 +1,74 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Zhi+Mang+Xing&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Cinzel:wght@500&family=Noto+Serif+SC:wght@500&display=block" rel="stylesheet">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style>
+</head><body>
+<canvas id="out" width="1920" height="1080"></canvas>
+<script type="module">
+import { BaseGL } from './gl.js';
+import { VectorGL } from './gl2.js';
+import * as FX from './fx.js';
+const W = 1920, H = 1080;
+const proj = new URLSearchParams(location.search).get('project');
+const P = await (await fetch(`projects/${proj}.json`)).json();
+const out = document.getElementById('out'), ctx = out.getContext('2d');
+const glc = document.createElement('canvas'); glc.width = W; glc.height = H;
+const base = P.pipeline === 'vector' ? new VectorGL(glc) : new BaseGL(glc);
+const layerA = FX.mk(W, H), layerB = FX.mk(W, H);
+const rawc = FX.mk(W, H);
+const imgCache = new Map();
+function loadImg(src) {
+  if (imgCache.has(src)) return imgCache.get(src);
+  const pr = new Promise((res, rej) => { const im = new Image(); im.onload = () => res(im); im.onerror = () => rej(src); im.src = src; });
+  imgCache.set(src, pr); if (imgCache.size > 40) imgCache.delete(imgCache.keys().next().value);
+  return pr;
+}
+// draw one "layer" (footage clip or JS panel) for song-time t into a 2D canvas
+async function drawLayer(seg, t, c) {
+  const g = c.getContext('2d');
+  if (seg.kind === 'clip') {
+    const lt = Math.max(0, t - seg.t0 + (seg.in || 0));
+    const idx = Math.min(seg.n - 1, Math.floor(lt * seg.fps * (seg.rate ?? 1)));
+    const im = await loadImg(`${seg.dir}/${String(idx + 1).padStart(5, '0')}.${seg.ext || 'jpg'}`);
+    if (seg.mode === 'raw') {   // original footage: pre-scaled (Lanczos) frame, no repaint, no grade
+      rawc.getContext('2d').drawImage(im, 0, 0, 1920, 1080);
+    } else base.draw(im, seg.mode, t, seg.grade || {});
+    const srcCanvas = seg.mode === 'raw' ? rawc : glc;
+    if (seg.cam) {   // virtual camera move (push-in / pan / roll) applied by code
+      const c = seg.cam, u0 = Math.max(0, Math.min(1, (t - seg.t0) / ((seg.t1 || seg.t0 + 4) - seg.t0)));
+      const u = u0 * u0 * (3 - 2 * u0), L = (a, b) => a + (b - a) * u;
+      const z = L(c.z0 ?? 1, c.z1 ?? 1), x = L(c.x0 ?? 0, c.x1 ?? 0), y = L(c.y0 ?? 0, c.y1 ?? 0), r = L(c.r0 ?? 0, c.r1 ?? 0);
+      g.save(); g.fillStyle = '#000'; g.fillRect(0, 0, 1920, 1080);
+      g.translate(960 + x * 1920, 540 + y * 1080); g.rotate(r * Math.PI / 180); g.scale(z, z); g.imageSmoothingQuality = 'high'; g.drawImage(srcCanvas, -960, -540); g.restore();
+    } else g.drawImage(srcCanvas, 0, 0);
+  } else {
+    FX.panels[seg.panel](g, t, t - seg.t0, seg);
+  }
+  for (const o of (seg.over || [])) FX.overlays[o.fx](g, t, o);
+}
+function segAt(t) { let s = P.segments[0]; for (const x of P.segments) if (x.t0 <= t) s = x; return s; }
+window.renderFrame = async (t, type = 'image/jpeg', q = 0.92) => {
+  const s = segAt(t), i = P.segments.indexOf(s), prev = P.segments[i - 1];
+  const tr = s.trans;  // transition INTO s, centred on s.t0 (starts tr.lead before)
+  const lead = tr ? (tr.lead ?? tr.dur * 0.5) : 0;
+  const nx = P.segments[i + 1];
+  if (nx && nx.trans && t >= nx.t0 - (nx.trans.lead ?? nx.trans.dur * 0.5)) {
+    // inside the lead-in of the next transition
+    await drawLayer(s, t, layerA); await drawLayer(nx, t, layerB);
+    const p = (t - (nx.t0 - (nx.trans.lead ?? nx.trans.dur * 0.5))) / nx.trans.dur;
+    FX.transitions[nx.trans.type](ctx, layerA, layerB, Math.min(1, p), t, nx.trans);
+  } else if (tr && prev && t < s.t0 - lead + tr.dur) {
+    await drawLayer(prev, t, layerA); await drawLayer(s, t, layerB);
+    FX.transitions[tr.type](ctx, layerA, layerB, (t - (s.t0 - lead)) / tr.dur, t, tr);
+  } else {
+    await drawLayer(s, t, layerA); ctx.drawImage(layerA, 0, 0);
+  }
+  for (const o of (P.global || [])) FX.overlays[o.fx](ctx, t, o, P);
+  return out.toDataURL(type, q);
+};
+await document.fonts.ready;
+await Promise.all(['64px "Ma Shan Zheng"', '64px "Zhi Mang Xing"', 'italic 600 64px "Cormorant Garamond"', 'italic 500 64px "Cormorant Garamond"', '64px "Cinzel"', '500 64px "Noto Serif SC"'].map(f => document.fonts.load(f, '心月狐乘烈风拨云弄雾其一月下化形游戏人间Ag')));
+FX.init(P); await FX.loadOnsets();
+window.ready = true;
+</script></body></html>

@@ -1,0 +1,100 @@
+2026-10-09 08:43:34	char board v1 t2i	0.072	bytedance/seedream-v5.0-pro/text-to-image	board_v1.png	
+2026-10-09 08:56:30	sample1 keyframe v1	0.0384	bytedance/seedream-v5.0-pro/edit	key_s1_v1.png	
+2026-10-09 08:58:31	sample1 wan i2v 480p v1	0.2	alibaba/wan-3.0/image-to-video	vid_s1_v1.mp4	
+2026-10-09 10:52:33	v2 wan3.0 r2v 480p	0.20	alibaba/wan-3.0/reference-to-video	wan_s1_v1.mp4	
+2026-10-09 10:55:58	v2 scene background (no character)	0.036	bytedance/seedream-v5.0-pro/text-to-image	scene_bg.png	
+2026-10-09 10:58:52	v2 wan3.0 r2v 480p take2	0.20	alibaba/wan-3.0/reference-to-video	wan_s1_v2.mp4	
+2026-10-09 11:29:47	v3 scene plate: windy lantern plaza, low side angle	0.036	bytedance/seedream-v5.0-pro/text-to-image	scene_s1b.png	
+2026-10-09 11:31:53	v3 wan3.0 r2v text-motion seed11	0.20	alibaba/wan-3.0/reference-to-video	wan_v3_s11.mp4	
+2026-10-09 11:31:55	v3 wan3.0 r2v text-motion seed23	0.20	alibaba/wan-3.0/reference-to-video	wan_v3_s23.mp4	
+2026-10-09 11:48:01	plate skysea	0.036	bytedance/seedream-v5.0-pro/text-to-image	plates/skysea.png	18b648af82a4465298e2e05ef702c20a
+2026-10-09 11:48:10	plate rooftop	0.036	bytedance/seedream-v5.0-pro/text-to-image	plates/rooftop.png	4fda4c37d4984debb9c09ca9903d80e8
+2026-10-09 11:48:10	plate street	0.036	bytedance/seedream-v5.0-pro/text-to-image	plates/street.png	bc616212796d464099119766724b3692
+2026-10-09 11:48:11	plate throne	0.036	bytedance/seedream-v5.0-pro/text-to-image	plates/throne.png	498e49690aff412da5df69591b710345
+2026-10-09 11:48:23	plate lake	0.036	bytedance/seedream-v5.0-pro/text-to-image	plates/lake.png	e8c5dfe3c8534dd8b2f4d1a0d40bde7a
+2026-10-09 11:49:56	plate firevoid	0.036	bytedance/seedream-v5.0-pro/text-to-image	plates/firevoid.png	df44c5c868e940969068e7fce48218e2
+2026-10-09 11:49:56	plate nexus	0.036	bytedance/seedream-v5.0-pro/text-to-image	plates/nexus.png	c309246106294577986ae7d0d2f46c8e
+2026-10-09 11:49:59	plate mirrorhall	0.036	bytedance/seedream-v5.0-pro/text-to-image	plates/mirrorhall.png	080e48af1933416badadd5059d56bd12
+2026-10-09 11:50:05	plate cliff	0.036	bytedance/seedream-v5.0-pro/text-to-image	plates/cliff.png	3fd31237b44d4d2fbabd4b121dbfc910
+2026-10-09 11:50:17	plate river	0.036	bytedance/seedream-v5.0-pro/text-to-image	plates/river.png	ff42747aab904c01bc2af10cccefee68
+2026-10-09 11:52:31	clip S03 take1	0.2	alibaba/wan-3.0/reference-to-video	clips/S03_t1.mp4	51bf596e7bb945cebd147a35d9ed94c4
+2026-10-09 11:52:34	clip S02 take1	0.2	alibaba/wan-3.0/reference-to-video	clips/S02_t1.mp4	57d58d0ba2b44e3aa080a3c484e86922
+2026-10-09 11:52:34	clip S07 take1	0.2	alibaba/wan-3.0/reference-to-video	clips/S07_t1.mp4	151bd3a94ee74ac9ac70e0277f6d3ab6
+2026-10-09 11:52:37	clip S06 take1	0.2	alibaba/wan-3.0/reference-to-video	clips/S06_t1.mp4	ab7b8a3c090a4f5db9eb3a5720912864
+2026-10-09 11:52:43	clip S04 take1	0.2	alibaba/wan-3.0/reference-to-video	clips/S04_t1.mp4	2cad8a45aacb4c0aa801de1f5b94879f
+2026-10-09 11:52:46	clip S08 take1	0.28	alibaba/wan-3.0/reference-to-video	clips/S08_t1.mp4	bde39ee4150e46fc86e0e5b5c708c701
+2026-10-09 11:54:22	clip S10 take1	0.2	alibaba/wan-3.0/reference-to-video	clips/S10_t1.mp4	fb48a80aa94340c6a2608dcde42038a3
+2026-10-09 11:54:25	clip S13 take1	0.2	alibaba/wan-3.0/reference-to-video	clips/S13_t1.mp4	d1db2413a3d04b99a4226eb02bad3e4f
+2026-10-09 11:54:25	clip S14 take1	0.2	alibaba/wan-3.0/reference-to-video	clips/S14_t1.mp4	dd6592b3c5a84adca5e3f2a5cfdbee2d
+2026-10-09 11:54:34	clip S11 take1	0.28	alibaba/wan-3.0/reference-to-video	clips/S11_t1.mp4	1cc3ec453c9c44b5a59c83674c3602f3
+2026-10-09 11:54:34	clip S15 take1	0.2	alibaba/wan-3.0/reference-to-video	clips/S15_t1.mp4	d55f9ae47b454645b9198f508a24d8c0
+2026-10-09 11:54:34	clip S16 take1	0.2	alibaba/wan-3.0/reference-to-video	clips/S16_t1.mp4	799f645d72a44f04969b224ea52aa113
+2026-10-09 11:55:59	clip S03 take2	0.2	alibaba/wan-3.0/reference-to-video	clips/S03_t2.mp4	b7a4411f0d6a40a88643ddc12d3eeb77
+2026-10-09 11:56:02	clip S06 take2	0.2	alibaba/wan-3.0/reference-to-video	clips/S06_t2.mp4	20047b97390b4c94a0ad95a13f0db790
+2026-10-09 11:56:07	clip S19 take1 (resumed)	0.2	alibaba/wan-3.0/reference-to-video	clips/S19_t1.mp4	769ff4003b244e9f9d60536f180d997c
+2026-10-09 11:56:11	clip S02 take2	0.2	alibaba/wan-3.0/reference-to-video	clips/S02_t2.mp4	f631c76b5b354bd3b01bbc1c87c299df
+2026-10-09 11:56:11	clip S08 take2	0.28	alibaba/wan-3.0/reference-to-video	clips/S08_t2.mp4	db465ca931c140728800ddb096406645
+2026-10-09 11:56:16	clip S17 take1 (resumed)	0.2	alibaba/wan-3.0/reference-to-video	clips/S17_t1.mp4	4a7a1585b7904191a9423a7b56b47552
+2026-10-09 11:56:17	clip S24 take1 (resumed)	0.2	alibaba/wan-3.0/reference-to-video	clips/S24_t1.mp4	83573cc265f04481804c1e2f1e54ae01
+2026-10-09 11:56:17	clip S20 take1 (resumed)	0.2	alibaba/wan-3.0/reference-to-video	clips/S20_t1.mp4	48200fd0483f4277b5d6c56134918b0f
+2026-10-09 11:56:27	clip S25 take1 (resumed)	0.2	alibaba/wan-3.0/reference-to-video	clips/S25_t1.mp4	25a5f6ef47ea465a8bc42b4a9c84b964
+2026-10-09 11:56:27	clip S22 take1 (resumed)	0.2	alibaba/wan-3.0/reference-to-video	clips/S22_t1.mp4	a1362bee37374066aa35c1a6562ce535
+2026-10-09 11:58:24	clip S14 take3	0.2	alibaba/wan-3.0/reference-to-video	clips/S14_t3.mp4	c1568f897b1b4ca1873ceb0da08d63dd
+2026-10-09 11:58:27	clip S10 take3	0.2	alibaba/wan-3.0/reference-to-video	clips/S10_t3.mp4	6a996638e7b144b1a5306fe2d3d6bfad
+2026-10-09 12:00:51	control test b	0.20	alibaba/wan-3.0/reference-to-video	ctrl_b.mp4	
+2026-10-09 12:00:52	control test a	0.20	alibaba/wan-3.0/reference-to-video	ctrl_a.mp4	
+2026-10-09 12:03:29	clip S03 take4	0.2	alibaba/wan-3.0/reference-to-video	clips/S03_t4.mp4	eb710ed3a2374576a3b79365e26d9c64
+2026-10-09 12:03:32	clip S02 take4	0.2	alibaba/wan-3.0/reference-to-video	clips/S02_t4.mp4	3e5ae04ca103450f9fdd387f338b0311
+2026-10-09 12:03:32	clip S06 take4	0.2	alibaba/wan-3.0/reference-to-video	clips/S06_t4.mp4	0b3ad157de1f4134b09f5faf8fdf56ed
+2026-10-09 12:03:32	clip S15 take4	0.2	alibaba/wan-3.0/reference-to-video	clips/S15_t4.mp4	d0a701d687244a1f8f1a02a89c3a0649
+2026-10-09 12:03:35	clip S11 take4	0.28	alibaba/wan-3.0/reference-to-video	clips/S11_t4.mp4	b149b0fec34647ad8c55493ea3364776
+2026-10-09 12:03:38	clip S14 take4	0.2	alibaba/wan-3.0/reference-to-video	clips/S14_t4.mp4	faa13e6aefe64d8fa1587f49d87f95e6
+2026-10-09 12:03:41	clip S08 take4	0.28	alibaba/wan-3.0/reference-to-video	clips/S08_t4.mp4	577f1474d79a4de0b75f5aa5c16042ab
+2026-10-09 12:03:44	clip S13 take4	0.2	alibaba/wan-3.0/reference-to-video	clips/S13_t4.mp4	9ec357fa6a3145fa8c7323d78cabc075
+2026-10-09 12:05:17	clip S16 take4	0.2	alibaba/wan-3.0/reference-to-video	clips/S16_t4.mp4	df6aaaaa86374a6b84ba426b7de3366c
+2026-10-09 12:05:23	clip S19 take4	0.2	alibaba/wan-3.0/reference-to-video	clips/S19_t4.mp4	2a946c3ffdab4ad0bbe86bc5dc7d53a5
+2026-10-09 12:05:23	clip S20 take4	0.2	alibaba/wan-3.0/reference-to-video	clips/S20_t4.mp4	8509296361f64c3a915f5a2e5ff668b6
+2026-10-09 12:05:23	clip S22 take4	0.2	alibaba/wan-3.0/reference-to-video	clips/S22_t4.mp4	1a1adff308c34cc18755b4fc41811f31
+2026-10-09 12:05:26	clip S24 take4	0.2	alibaba/wan-3.0/reference-to-video	clips/S24_t4.mp4	baeb5725382f4b72b3e00100f8e4ea6e
+2026-10-09 12:05:29	clip S25 take4	0.2	alibaba/wan-3.0/reference-to-video	clips/S25_t4.mp4	e627f450e2e34b0cba1cff66b60aa9ed
+2026-10-09 12:07:08	clip pending take4 (resumed)	0.24	alibaba/wan-3.0/reference-to-video	pending/2eddbd40154e40cb8efccbb85ec68671.mp4	2eddbd40154e40cb8efccbb85ec68671
+2026-10-09 12:07:18	clip pending take4 (resumed)	0.24	alibaba/wan-3.0/reference-to-video	pending/9a1b4b4edc7943548fd7d41e811598dc.mp4	9a1b4b4edc7943548fd7d41e811598dc
+2026-10-09 12:07:18	clip pending take4 (resumed)	0.24	alibaba/wan-3.0/reference-to-video	pending/3f4b652e157945e798c8c1f1f24c879e.mp4	3f4b652e157945e798c8c1f1f24c879e
+2026-10-09 12:07:19	clip pending take4 (resumed)	0.24	alibaba/wan-3.0/reference-to-video	pending/f6b74142f6564f6fb5e7889ec460cee2.mp4	f6b74142f6564f6fb5e7889ec460cee2
+2026-10-09 12:07:20	clip pending take4 (resumed)	0.24	alibaba/wan-3.0/reference-to-video	pending/c1902fc36cb94fc4943893f8f783535b.mp4	c1902fc36cb94fc4943893f8f783535b
+2026-10-09 12:07:29	clip pending take4 (resumed)	0.24	alibaba/wan-3.0/reference-to-video	pending/e841b37227d94a00a2da53199b7cdaf5.mp4	e841b37227d94a00a2da53199b7cdaf5
+2026-10-09 12:07:56	clip S15 i2v take5	0.2	alibaba/wan-3.0/image-to-video	clips/S15_t5.mp4	
+2026-10-09 12:07:59	clip S06 i2v take5	0.2	alibaba/wan-3.0/image-to-video	clips/S06_t5.mp4	
+2026-10-09 12:10:08	clip S17 take4 (downloaded after driver stop)	0.2	alibaba/wan-3.0/reference-to-video	clips/S17_t4.mp4	
+2026-10-09 12:13:05	clip S33 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S33_t6.mp4	deaf9a30b94d488897914bbd1e5295e6
+2026-10-09 12:13:05	clip S36 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S36_t6.mp4	bc34bee5521648d7b09c3d7c559c36e9
+2026-10-09 12:13:08	clip S22 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S22_t6.mp4	cdf44c55242a4af4b664ef1982811a4a
+2026-10-09 12:13:14	clip S24 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S24_t6.mp4	7b33d73f2ee84b078cf74e76dc9af8a9
+2026-10-09 12:13:17	clip S13 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S13_t6.mp4	8b4a6593174a42089152f23f98f1223c
+2026-10-09 12:13:23	clip S27 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S27_t6.mp4	c9ab3b01e95d44b9a14061e2d04c45ee
+2026-10-09 12:13:26	clip S35 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S35_t6.mp4	91e04d8958f2464e9b86928c997311d3
+2026-10-09 12:13:35	clip S11 take6	0.28	alibaba/wan-3.0/reference-to-video	clips/S11_t6.mp4	c247cb5810724f5fa4ceb1347dc8374d
+2026-10-09 12:14:08	clip S06 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S06_t6.mp4	a3d6df73ede24b829b287711f1b458da
+2026-10-09 12:14:11	clip S26 take6	0.28	alibaba/wan-3.0/reference-to-video	clips/S26_t6.mp4	1c64c1fa481e4fc485d0d9d711231f8f
+2026-10-09 12:14:56	clip S39 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S39_t6.mp4	a805ac5e6bbd460caefd29b387bffcb7
+2026-10-09 12:15:11	clip S37 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S37_t6.mp4	94fa6841da9d42b4b8c03af41454f560
+2026-10-09 12:15:11	clip S40 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S40_t6.mp4	557fa9e155a649e98ba742ea78a9ed2a
+2026-10-09 12:15:11	clip S43 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S43_t6.mp4	f1610d01adad447c816a2dcd8f8d79ab
+2026-10-09 12:15:14	clip S38 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S38_t6.mp4	76361595ae1944d5b860f4a791ed23d5
+2026-10-09 12:15:14	clip S44 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S44_t6.mp4	084a1346b9c5415f8b443e3db32d0695
+2026-10-09 12:15:17	clip S41 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S41_t6.mp4	173e232f61d340a2ad04dc7f927b2441
+2026-10-09 12:15:23	clip S45 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S45_t6.mp4	e575c7ce98aa427f94baa511918dcb2f
+2026-10-09 12:16:05	clip S46 take6	0.2	alibaba/wan-3.0/reference-to-video	clips/S46_t6.mp4	6b889ecf266b496489941abc6e9936fe
+2026-10-09 12:16:29	clip S47 take6	0.44	alibaba/wan-3.0/reference-to-video	clips/S47_t6.mp4	3015ffae24e340959c7448a5716aa3f2
+2026-10-09 12:19:49	clip S38 take8	0.2	alibaba/wan-3.0/reference-to-video	clips/S38_t8.mp4	6b195bf90ecc48eba5616ce9c5465e3f
+2026-10-09 12:20:01	clip S24 take8	0.2	alibaba/wan-3.0/reference-to-video	clips/S24_t8.mp4	a932ce96fdc94c34913b330f7a7660a2
+2026-10-09 12:20:01	clip S26 take8	0.28	alibaba/wan-3.0/reference-to-video	clips/S26_t8.mp4	63b240c57ad446c0b5f437a09a63f4f2
+2026-10-09 12:20:19	clip S47 take8	0.44	alibaba/wan-3.0/reference-to-video	clips/S47_t8.mp4	5be6ad6183424b3283407dcb970b96cd
+2026-10-09 18:40:26	clip S25 take11	0.2	alibaba/wan-3.0/reference-to-video	clips/S25_t11.mp4	13379413acea43c8bbed56a0477038e1
+2026-10-09 18:40:29	clip S24 take11	0.2	alibaba/wan-3.0/reference-to-video	clips/S24_t11.mp4	e452c8b26c074620b51f5f9ab036b93e
+2026-10-09 18:40:29	clip S25 take10	0.2	alibaba/wan-3.0/reference-to-video	clips/S25_t10.mp4	3f10a1c252c44752be7e692874d2a49a
+2026-10-09 18:40:32	clip S36 take11	0.2	alibaba/wan-3.0/reference-to-video	clips/S36_t11.mp4	afa39808bb024024b1a14565a389c22a
+2026-10-09 18:40:32	clip S36 take10	0.2	alibaba/wan-3.0/reference-to-video	clips/S36_t10.mp4	787e9f98ab984249a5f82ef03951fdf7
+2026-10-09 18:40:38	clip S26 take10	0.28	alibaba/wan-3.0/reference-to-video	clips/S26_t10.mp4	cab2102dbd5649d9a0981d3bb688db31
+2026-10-09 18:40:41	clip S24 take10	0.2	alibaba/wan-3.0/reference-to-video	clips/S24_t10.mp4	947ada2e571348b793fab91c0fb987d1
+2026-10-09 18:40:50	clip S26 take11	0.28	alibaba/wan-3.0/reference-to-video	clips/S26_t11.mp4	ec7b534b69bc42278922157ef1053ec9

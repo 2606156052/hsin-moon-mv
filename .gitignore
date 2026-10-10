@@ -1,0 +1,25 @@
+# media & generated
+*.mp4
+*.mp3
+*.wav
+*.pcm
+*.blend
+*.blend1
+production/clips/
+production/plates/
+production/keys/
+production/audio/
+production/sheets/
+production/pending/
+production/*.log
+studio/frames/
+studio/out/
+studio/node_modules/
+node_modules/
+# copyrighted text, supplied locally
+production/lyrics.json
+# generated compositor projects (contain lyric text)
+studio/projects/
+# release asset
+skill/*.zip
+.DS_Store
